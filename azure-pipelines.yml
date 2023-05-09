@@ -12,7 +12,7 @@ steps:
     projectName: 'springpet-clinic'
   displayName: 'SonarCloud Prepare' 
   
-  - task: Gradle@3
+- task: Gradle@3
   inputs:
     gradleWrapperFile: 'gradlew'
     tasks: 'sonarqube'
