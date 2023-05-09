@@ -8,10 +8,9 @@ steps:
     SonarCloud: 'SonarToken'
     organization: 'ravellycl'
     projectKey: 'ravellycl_springpet-clinic'
-    scannerMode: 'Other'
     projectName: 'springpet-clinic'
   displayName: 'SonarCloud Prepare' 
-  
+
 - task: Gradle@3
   inputs:
     gradleWrapperFile: 'gradlew'
