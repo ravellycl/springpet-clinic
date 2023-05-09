@@ -11,10 +11,11 @@ steps:
     scannerMode: 'Other'
     projectName: 'springpet-clinic'
   displayName: 'SonarCloud Prepare' 
-- task: Gradle@3
+  
+  - task: Gradle@3
   inputs:
     gradleWrapperFile: 'gradlew'
-    tasks: 'SonarCloud'
+    tasks: 'sonarqube'
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
     sonarQubeRunAnalysis: true
